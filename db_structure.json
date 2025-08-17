@@ -1,0 +1,50 @@
+{
+  "collections": {
+    "userInfos": {
+      "document_id": "userId",
+      "fields": {
+        "name": "string",
+        "email": "string",
+        "phone": "string",
+        "isProfessional": "boolean",
+        "createdAt": "timestamp"
+      }
+    },
+    "diagnostics": {
+      "document_id": "diagnosticId (auto-generated)",
+      "fields": {
+        "userId": "string",
+        "proUserId": "string | null",
+        "patientInfo": {
+          "firstName": "string | null",
+          "lastName": "string | null",
+          "phone": "string | null"
+        },
+        "diagnosticPhotoUrl": "string",
+        "scores": {
+          "property1": "number",
+          "property2": "number",
+          "property3": "number",
+          "property4": "number",
+          "property5": "number"
+        },
+        "recommendedProducts": "array<string>",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp"
+      }
+    },
+    "products": {
+      "document_id": "barcode",
+      "fields": {
+        "name": "string",
+        "brand": "string",
+        "description": "string",
+        "category": "string",
+        "price": "number",
+        "imageUrl": "string",
+        "isActive": "boolean",
+        "createdAt": "timestamp"
+      }
+    }
+  }
+}

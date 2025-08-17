@@ -120,3 +120,4 @@ const app = new ApplicationRegression(regression);
 
 // 4. Exécution du programme
 app.executer();
+
